@@ -7,12 +7,14 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/text.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Home</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -26,18 +28,51 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Mock Service</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Cadastro de Mocks para teste de Integração </h5>
-      </div>
-      <div class="row center">
-        <a href="html/dashboard.html" id="download-button" class="btn-large waves-effect waves-light orange">Iniciar</a>
-      </div>
-      <br><br>
-      <div class="section">
+      <h1 class="header center orange-text">Novo - Cenário de Teste</h1>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="nome" type="email">
+                <label for="nome" data-error="wrong" data-success="right">Nome</label>
+              </div>
+            </div>
+          <div class="row center">
+ <ul class="treeview">
+        <li>
+            <input type="checkbox" name="tall" id="tall">
+            <label for="tall" class="custom-unchecked">RetornoVO</label>
+            
+            <ul>
+                 <li>
+                     <input type="checkbox" name="tall-2" id="tall-2">
+                     <label for="tall-2" class="custom-unchecked">PessoaVO</label>
+                     <ul>
+                         <li>
+                             <input type="checkbox" name="tall-2-1" id="tall-2-1">
+                             <label for="tall-2-1" class="custom-unchecked">email</label>
+                         </li>
+                         <li>
+                             <input type="checkbox" name="tall-2-2" id="tall-2-2">
+                             <label for="tall-2-2" class="custom-unchecked">nome</label>
+                         </li>
+                         <li class="last">
+                             <input type="checkbox" name="tall-2-3" id="tall-2-3">
+                             <label for="tall-2-3" class="custom-unchecked">idade</label>
+                         </li>
+                     </ul>
+                 </li>
+            </ul>
+        </li>
+        
+    </ul>
+
+         </div>
+          </form>
+        </div>
+       <br><br>
 
     </div>
-     </div>
   </div>
 <div class="container">
     <div class="section">
@@ -56,12 +91,17 @@
     </div>
   </div>
 
+
+
+
   <footer class="page-footer orange">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Projeto</h5>
           <p class="grey-text text-lighten-4">Com o número crescente de aplicações integradas, as diferentes equipes precisam estar sincronizadas com as diferentes demandas, o sistema de mock tende a gerar independencia de desenvolvimento para que seja possível uma equipe prosseguir com massas de teste ao mesmo tempo em que a outra continue seu desenvolvimento </p>
+
+
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Código Fonte</h5>
@@ -81,8 +121,12 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+  <script src="../js/tree.js"></script>
+
+
 
   </body>
 </html>
